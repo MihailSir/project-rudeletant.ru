@@ -1,0 +1,8 @@
+.adv {
+  background-color: #f10e34; }
+
+@media all and (max-width: 1024px) {
+  .adv > div > marquee > img {
+    width: 100%; } }
+
+/*# sourceMappingURL=adv.css.map */

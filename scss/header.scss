@@ -1,0 +1,68 @@
+.header {
+  background-color: #222222;
+}
+
+
+.header__text {
+  font-family: "'LatoR', sans-serif;";
+  font-size: 11px;
+  line-height: 0px;
+  text-transform: uppercase;
+  padding-left: 4px;
+  color: white;
+}
+
+.header__account {
+  font-family: "'LatoBold', sans-serif;";
+  font-size: 14px;
+  margin: 0;
+  color: white;
+}
+
+.header__box {
+  margin-right: 3px;
+  height: 37px;
+  width: 37px;
+  background: url(../image/icon/Cart@2x.png) no-repeat center/cover;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.header__section {
+  background-color: #f10e34;
+  z-index: 2;
+}
+
+.header__title {
+  display: inline-flex;
+  align-items: center;
+  border-right: solid transparent 30px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__all {
+  background-size: 13%;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 50px;
+  font-family: 'LatoBold', sans-serif;
+  color: white;
+  display: inline-block;
+
+}
+
+@media all and (max-width: 768px) {
+  .header__title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo > img {
+    float: none;
+  }
+}

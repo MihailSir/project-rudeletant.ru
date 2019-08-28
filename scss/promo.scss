@@ -1,0 +1,12 @@
+.promo {
+    width: 47%;
+    box-shadow: 0 0 5px rgba(236,236,236,1)
+}
+.promo>img {
+    width: 100%;
+}
+@media all and (max-width: 320px) {
+    .promo {
+        width: auto;
+    }
+}

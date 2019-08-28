@@ -1,0 +1,22 @@
+.adv {
+  background-color: #f10e34;
+}
+@media all and (max-width: 1024px) {
+  .adv>div>marquee>img {
+    width: 100%;
+    //height: 80px;
+  }
+}
+//
+//@media screen and (max-width: 768px) {
+//  .adv>div>marquee>img {
+//    width: 100%;
+//    height: 70px;
+//  }
+//}
+//@media screen and (max-width: 540px) {
+//  .adv>div>marquee>img {
+//    width: 100%;
+//    //height: 60px;
+//  }
+//}

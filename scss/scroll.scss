@@ -1,0 +1,36 @@
+.scroll {
+  display: inline-flex;
+}
+
+.scroll__circle {
+  border-radius: 50%;
+  background-color: #f10e34;
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  justify-content: center;
+}
+
+.scroll__circle-left {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.scroll__circle-right {
+  background-color: #cacaca;
+  cursor: pointer;
+}
+
+.scroll__treangle {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid white;
+  border-bottom: 4px solid transparent;
+}
+
+.scroll__treangle--right {
+  border-left: 4px solid white;
+  border-right: none;
+}

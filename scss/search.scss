@@ -1,0 +1,46 @@
+.search {
+    font-size: 0;
+    display: flex;
+}
+.search__box {
+    float: right;
+}
+.search__account {
+    float: right;
+}
+.search__form {
+    flex-grow: 1;
+    margin-right: 40px;
+}
+.search__search {
+    display: inline-flex;
+}
+.search__input {
+    padding: 10px 6%;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    font-size: 15px;
+    flex-grow: 1;
+}
+.search__button {
+    background: red;
+    vertical-align: bottom;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.search__button--icon{
+    width: 66%;
+    padding: 10px 5px;
+}
+@media all and (max-width: 540px){
+    .search__box {
+        display: none;
+    }
+    .search__account {
+        display: none;
+    }
+.search__search {
+    width: 90%;
+}
+}

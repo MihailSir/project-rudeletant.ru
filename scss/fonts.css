@@ -1,0 +1,17 @@
+@font-face {
+  src: url("../fonts/Lato-BlackItalic.ttf");
+  font-family: 'LatoB', sans-serif; }
+@font-face {
+  src: url("../fonts/Lato-Regular.ttf");
+  font-family: 'LatoR', sans-serif; }
+@font-face {
+  src: url("../fonts/Heebo-Bold.ttf");
+  font-family: 'Heebo', sans-serif; }
+@font-face {
+  src: url("../fonts/Lato-Bold.ttf");
+  font-family: 'LatoBold', sans-serif; }
+@font-face {
+  src: url("../fonts/Lato-Black.ttf");
+  font-family: 'Lato', sans-serif; }
+
+/*# sourceMappingURL=fonts.css.map */
