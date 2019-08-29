@@ -14,6 +14,9 @@
     text-align: left;
     width: 24%;
 }
+.footer__inner-block--information {
+    padding-left: 60px;
+}
 
 .footer__logo {
     position: relative;
@@ -88,6 +91,9 @@
         padding: 30px 5px;
             }
     .footer__inner-block {
+        width: auto;
+    }
+    .footer__inner-block--information {
         width: 100%;
         padding-left: 0;
     }
