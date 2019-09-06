@@ -1,14 +1,15 @@
 .laptops {
-  background: url(../image/laptops@2x.png) no-repeat center/cover;
-  background-size: 90%;
-  padding: 25px;
-  display: inline-flex;
-  width: 50%;
-  flex-direction: row-reverse;
-}
-.laptops-text {
   width: 40%;
 }
+
+.laptops-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+}
+
 .laptops-heading {
   text-transform: uppercase;
   font-family: 'LatoBold', sans-serif;
@@ -16,11 +17,18 @@
   font-size: 22px;
   margin: 0;
 }
+
 .laptops-heading--ready {
   color: #0f8ce9;
 }
+
 @media all and (max-width: 768px) {
   .laptops {
     display: none;
+  }
+}
+@media all and (max-width: 540px) {
+  .laptops-heading {
+   font-size: 19px;
   }
 }
