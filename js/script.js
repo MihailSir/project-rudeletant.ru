@@ -1,30 +1,50 @@
-$(".open").click(function() {
+$(".open").click(function () {
 
-    $(".dropdown").css({ "display":"block" });
+    $(".dropdown").css({"display": "block"});
 
-    $(".close").css({ "display":"block" });
+    $(".close").css({"display": "block"});
 
-    $(".open").css({ "display":"none" });
+    $(".open").css({"display": "none"});
 
 
 })
 
-$('.close').click(function() {
+$('.close').click(function () {
 
-    $(".close").css({ "display":"none"});
+    $(".close").css({"display": "none"});
 
-    $(".open").css({ "display":"block" });
+    $(".open").css({"display": "block"});
 
-    $(".dropdown").css({ "display":"none" });
+    $(".dropdown").css({"display": "none"});
 
 
 });
 
-$('.dropdown ').click(function(event){
+$('.dropdown ').click(function (event) {
 
     event.stopPropagation();
 
 });
+"use strict";
+$('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings:
+                    {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+            }
+
+        ]
+    }
+)
+;
 
 
 'use strict';
@@ -34,7 +54,9 @@ var multiItemSlider = (function () {
         var rect = element.getBoundingClientRect(),
             vWidth = window.innerWidth || doc.documentElement.clientWidth,
             vHeight = window.innerHeight || doc.documentElement.clientHeight,
-            elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+            elemFromPoint = function (x, y) {
+                return document.elementFromPoint(x, y)
+            };
         if (rect.right < 0 || rect.bottom < 0
             || rect.left > vWidth || rect.top > vHeight)
             return false;
@@ -63,8 +85,8 @@ var multiItemSlider = (function () {
             _interval = 0,
             _html = _mainElement.innerHTML,
             _states = [
-                { active: false, minWidth: 0, count: 1 },
-                { active: false, minWidth: 980, count: 2 }
+                {active: false, minWidth: 0, count: 1},
+                {active: false, minWidth: 980, count: 2}
             ],
             _config = {
                 isCycling: false, // автоматическая смена слайдов
@@ -81,7 +103,7 @@ var multiItemSlider = (function () {
 
         // наполнение массива _items
         _sliderItems.forEach(function (item, index) {
-            _items.push({ item: item, position: index, transform: 0 });
+            _items.push({item: item, position: index, transform: 0});
         });
 
         var _setActive = function () {
@@ -205,7 +227,7 @@ var multiItemSlider = (function () {
             _step = _itemWidth / _wrapperWidth * 100;
             _items = [];
             _sliderItems.forEach(function (item, index) {
-                _items.push({ item: item, position: index, transform: 0 });
+                _items.push({item: item, position: index, transform: 0});
             });
         }
 
@@ -275,7 +297,9 @@ var multiItemBox3 = (function () {
         var rect = element.getBoundingClientRect(),
             vWidth = window.innerWidth || doc.documentElement.clientWidth,
             vHeight = window.innerHeight || doc.documentElement.clientHeight,
-            elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+            elemFromPoint = function (x, y) {
+                return document.elementFromPoint(x, y)
+            };
         if (rect.right < 0 || rect.bottom < 0
             || rect.left > vWidth || rect.top > vHeight)
             return false;
@@ -304,8 +328,8 @@ var multiItemBox3 = (function () {
             _interval = 0,
             _html = _mainElement.innerHTML,
             _states = [
-                { active: false, minWidth: 0, count: 1 },
-                { active: false, minWidth: 980, count: 2 }
+                {active: false, minWidth: 0, count: 1},
+                {active: false, minWidth: 980, count: 2}
             ],
             _config = {
                 isCycling: false, // автоматическая смена слайдов
@@ -322,7 +346,7 @@ var multiItemBox3 = (function () {
 
         // наполнение массива _items
         _boxCardsItems.forEach(function (item, index) {
-            _items.push({ item: item, position: index, transform: 0 });
+            _items.push({item: item, position: index, transform: 0});
         });
 
         var _setActive = function () {
@@ -446,7 +470,7 @@ var multiItemBox3 = (function () {
             _step = _itemWidth / _wrapperWidth * 100;
             _items = [];
             _boxCardsItems.forEach(function (item, index) {
-                _items.push({ item: item, position: index, transform: 0 });
+                _items.push({item: item, position: index, transform: 0});
             });
         }
 
@@ -516,7 +540,9 @@ var multiItemBox4 = (function () {
         var rect = element.getBoundingClientRect(),
             vWidth = window.innerWidth || doc.documentElement.clientWidth,
             vHeight = window.innerHeight || doc.documentElement.clientHeight,
-            elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+            elemFromPoint = function (x, y) {
+                return document.elementFromPoint(x, y)
+            };
         if (rect.right < 0 || rect.bottom < 0
             || rect.left > vWidth || rect.top > vHeight)
             return false;
@@ -545,8 +571,8 @@ var multiItemBox4 = (function () {
             _interval = 0,
             _html = _mainElement.innerHTML,
             _states = [
-                { active: false, minWidth: 0, count: 1 },
-                { active: false, minWidth: 980, count: 2 }
+                {active: false, minWidth: 0, count: 1},
+                {active: false, minWidth: 980, count: 2}
             ],
             _config = {
                 isCycling: false, // автоматическая смена слайдов
@@ -563,7 +589,7 @@ var multiItemBox4 = (function () {
 
         // наполнение массива _items
         _boxCardsItems.forEach(function (item, index) {
-            _items.push({ item: item, position: index, transform: 0 });
+            _items.push({item: item, position: index, transform: 0});
         });
 
         var _setActive = function () {
@@ -687,7 +713,7 @@ var multiItemBox4 = (function () {
             _step = _itemWidth / _wrapperWidth * 100;
             _items = [];
             _boxCardsItems.forEach(function (item, index) {
-                _items.push({ item: item, position: index, transform: 0 });
+                _items.push({item: item, position: index, transform: 0});
             });
         }
 
@@ -757,7 +783,9 @@ var multiItemBox5 = (function () {
         var rect = element.getBoundingClientRect(),
             vWidth = window.innerWidth || doc.documentElement.clientWidth,
             vHeight = window.innerHeight || doc.documentElement.clientHeight,
-            elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+            elemFromPoint = function (x, y) {
+                return document.elementFromPoint(x, y)
+            };
         if (rect.right < 0 || rect.bottom < 0
             || rect.left > vWidth || rect.top > vHeight)
             return false;
@@ -786,8 +814,8 @@ var multiItemBox5 = (function () {
             _interval = 0,
             _html = _mainElement.innerHTML,
             _states = [
-                { active: false, minWidth: 0, count: 1 },
-                { active: false, minWidth: 980, count: 2 }
+                {active: false, minWidth: 0, count: 1},
+                {active: false, minWidth: 980, count: 2}
             ],
             _config = {
                 isCycling: false, // автоматическая смена слайдов
@@ -804,7 +832,7 @@ var multiItemBox5 = (function () {
 
         // наполнение массива _items
         _boxCardsItems.forEach(function (item, index) {
-            _items.push({ item: item, position: index, transform: 0 });
+            _items.push({item: item, position: index, transform: 0});
         });
 
         var _setActive = function () {
@@ -928,7 +956,7 @@ var multiItemBox5 = (function () {
             _step = _itemWidth / _wrapperWidth * 100;
             _items = [];
             _boxCardsItems.forEach(function (item, index) {
-                _items.push({ item: item, position: index, transform: 0 });
+                _items.push({item: item, position: index, transform: 0});
             });
         }
 
